@@ -1,0 +1,90 @@
+// #home {
+//     position: relative;
+//     min-height: 100vh;
+
+//     .container {
+//         width: 1600px;
+//         display: flex;
+//         justify-content: center;
+//         // position: relative;
+//         // z-index: 3;
+//     }
+
+//     .main-txt {
+//         position: relative;
+//         // align-self: center;
+//         top: 400px;
+//         left: 0px;
+//         z-index: 1;
+//     }
+
+//     .cont-img-hero {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//     }
+
+//     .overlay{
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         display: flex;
+//         justify-content: flex-end;
+//         box-shadow: inset 0px 50px 50px 80px rgb(0, 0, 0);
+//         // z-index: 3;
+//     }
+
+//     .hero {
+//         max-width: 100%;
+//         display: flex;
+//     }
+// }
+
+#home {
+    display: flex;
+    height: 100vh;
+    // max-width: 1280px;
+    align-items: flex-start;
+    justify-content: center;
+    // margin: 0 50px;
+    box-sizing: border-box;
+
+    .container {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .main-txt {
+        text-align: left;
+        // overflow: visible;
+        // margin-left: 30px;
+        font-weight: 800;
+    }
+
+    .hero-cont {
+        position: relative;
+        display: inline-block;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0px 50px 50px 80px rgb(0, 0, 0);
+        pointer-events: none; /* This prevents the overlay from blocking any mouse events */
+        // background-color: red;
+    }
+
+    
+}
