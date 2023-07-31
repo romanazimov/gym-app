@@ -23,7 +23,7 @@ export default function Home() {
         <section id='home'>
             <div className='container'>
                 <div className='txt-cont'>
-                    <h1 className='main-txt'>Free trial sesion with a trainer</h1>
+                    <h1 className='main-txt'>Free trial session with a trainer</h1>
                 </div>
                 <div className='hero-cont'>
                     <div className='overlay'></div>

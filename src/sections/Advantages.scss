@@ -1,12 +1,24 @@
 #advantages {
+
+    .container {
+        margin-bottom: 200px;
+    }
     
-    // .title {
-    //     text-align: left;
-    //     font-size: 64px;
-    // }
+    .section-title {
+        font-size: 64px;
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 80px;
+    }
     
     .reasons {
-        display: flex;
-        flex-direction: row !important;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 80px;
     }
 }
