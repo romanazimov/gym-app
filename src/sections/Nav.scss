@@ -31,4 +31,18 @@ nav {
         gap: 75px;
         font-size: 15px;
     }
+
+    @media (width < 750px) {
+        .container {
+            margin-top: 40px;
+        }
+
+        ul {
+            display: none;
+        }
+
+        .logo {
+            font-size: 32px;
+        }
+    }
 }

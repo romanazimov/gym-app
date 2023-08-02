@@ -1,4 +1,4 @@
-import './reason.css'
+import './Reason.css'
 
 interface ReasonProps {
     img: string;
@@ -8,7 +8,7 @@ interface ReasonProps {
     };
 }
 
-export default function reason({img, info}: ReasonProps) {
+export default function Reason({img, info}: ReasonProps) {
     return (
         <div className="reason-cont">
             <img className='img' src={img} alt={""} />

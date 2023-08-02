@@ -86,3 +86,27 @@ p {
 li {
   color: white;
 }
+
+button {
+  background-color: yellow;
+  color: black;
+  padding: 5px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* button:hover {
+  border-color: red;
+}
+
+button:focus {
+  border-color: red;
+}
+
+button:visited {
+  border-color: red;
+}
+
+button:active {
+  border-color: red;
+} */

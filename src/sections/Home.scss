@@ -1,90 +1,69 @@
-// #home {
-//     position: relative;
-//     min-height: 100vh;
-
-//     .container {
-//         width: 1600px;
-//         display: flex;
-//         justify-content: center;
-//         // position: relative;
-//         // z-index: 3;
-//     }
-
-//     .main-txt {
-//         position: relative;
-//         // align-self: center;
-//         top: 400px;
-//         left: 0px;
-//         z-index: 1;
-//     }
-
-//     .cont-img-hero {
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//     }
-
-//     .overlay{
-//         width: 100%;
-//         height: 100%;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         display: flex;
-//         justify-content: flex-end;
-//         box-shadow: inset 0px 50px 50px 80px rgb(0, 0, 0);
-//         // z-index: 3;
-//     }
-
-//     .hero {
-//         max-width: 100%;
-//         display: flex;
-//     }
-// }
-
 #home {
-    display: flex;
     height: 100vh;
-    // max-width: 1280px;
+    width: 1280px;
+    max-width: 100%;
+    display: flex;
     align-items: flex-start;
-    justify-content: center;
-    // margin: 0 50px;
+    justify-content: flex-end;
     box-sizing: border-box;
 
-    .container {
+    .text-cont {
         display: flex;
-        // justify-content: space-between;
+        position: absolute;
+        max-width: 1280px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .title-cont {
+        display: flex;
+        justify-content: left;
         align-items: center;
-        justify-content: center;
+        max-width: 1280px;
+        width: 100%;
+        text-align: right;
+        z-index: 100;
+        height: 660px;
     }
 
-    img {
-        display: block;
-        max-width: 100%;
+    .title {
+        font-size: 48px;
     }
 
-    .main-txt {
-        text-align: left;
-        // overflow: visible;
-        // margin-left: 30px;
-        font-weight: 800;
-    }
-
-    .hero-cont {
+    .img-cont {
+        background-color: blue;
         position: relative;
-        display: inline-block;
+        overflow: hidden;
+        width: 100%;
     }
-
-    .overlay {
+    
+    .img-cont::after {
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
+        box-shadow: inset 0px 0px 50px 80px rgb(0, 0, 0);
         width: 100%;
         height: 100%;
-        box-shadow: inset 0px 50px 50px 80px rgb(0, 0, 0);
-        pointer-events: none; /* This prevents the overlay from blocking any mouse events */
-        // background-color: red;
+    }
+    
+    .img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
     }
 
-    
+    @media (width < 1000px) {
+        margin-top: 50px;
+
+        .title-cont {
+            justify-content: middle;
+        }
+    }
+
+    @media (width < 750px) {
+        .title {
+            text-align: center;
+        }
+    }
 }

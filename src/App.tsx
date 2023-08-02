@@ -5,6 +5,7 @@ import './App.css'
 import Home from './sections/Home.tsx'
 import Nav from './sections/Nav.tsx'
 import Advantages from './sections/Advantages.tsx'
+import Membership from './sections/Membership.tsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -34,8 +35,8 @@ function App() {
       <Nav/>
       <Home/>
       <Advantages/>
-      {/* <membership/>
-      <about/>
+      <Membership/>
+      {/*<about/>
       <trainer/>
       <footer/> */}
     </>
