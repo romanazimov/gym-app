@@ -6,6 +6,7 @@ import Home from './sections/Home.tsx'
 import Nav from './sections/Nav.tsx'
 import Advantages from './sections/Advantages.tsx'
 import Membership from './sections/Membership.tsx'
+import About from './sections/About.tsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -36,9 +37,9 @@ function App() {
       <Home/>
       <Advantages/>
       <Membership/>
-      {/*<about/>
-      <trainer/>
-      <footer/> */}
+      <About/>
+      <Team/>
+      {/* <footer/> */}
     </>
   )
 }

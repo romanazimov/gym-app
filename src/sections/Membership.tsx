@@ -4,8 +4,8 @@ import Pass from '../components/Membership/Pass'
 export default function Membership() {
     return (
         <section id='membership'>
-            <p className='section-title'>Gym Membership</p>
-            <p className='sub-title'></p>
+            <h1>Gym Membership</h1>
+            {/* <p className='sub-title'></p> */}
             <div className='passes'>
                 <Pass
                     title={'Trial'}

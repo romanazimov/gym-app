@@ -1,5 +1,5 @@
 import './Advantages.scss'
-import Reason from '../components/Advantages/reason'
+import Reason from '../components/Advantages/Reason'
 import line from '../assets/advantages/icon_line.png'
 import equipment from '../assets/advantages/icon_equipment.png'
 import zones from '../assets/advantages/icon_fitness_zones.png'
@@ -9,7 +9,7 @@ export default function Advantages() {
     return (
         <section id='advantages'>
             <div className='container'>
-                <p className='section-title'>Reasons to join</p>
+                <h1>Reasons to join</h1>
                 <div className='reasons'>
                     <Reason
                         img={line}
