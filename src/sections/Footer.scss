@@ -1,0 +1,90 @@
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    .about-col,
+    .address-col,
+    .contact-col {
+        text-align: left;
+        width: 250px;
+    }
+
+    .address-col {
+    }
+
+    .about-col {
+
+        .logo {
+            font-size: 24px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 20px;
+        }
+    
+        .sub-logo {
+            color: yellow;
+        }
+    }
+
+    .contact-col {
+        
+        .icon-phone,
+        .icon-email {
+            margin-right: 20px;
+            color: yellow
+        }
+
+        .phone-cont,
+        .email-cont {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-cont {
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+    }
+
+    @media (width < 1000px) {
+        justify-content: space-around;
+        grid-template-columns: auto auto;
+
+        .about-col {
+            display: none;
+        }
+    }
+
+    @media (width < 1000px) {
+        justify-content: space-around;
+        grid-template-columns: auto auto;
+
+        .about-col {
+            display: none;
+        }
+    }
+
+    @media (width < 750px) {
+        grid-template-columns: auto;
+        justify-content: center;
+
+        .address-col,
+        .contact-col {
+            text-align: center;
+            // // width: 250px;
+        }
+
+        .address-col {
+            margin-bottom: 40px;
+        }
+
+        .phone-cont,
+        .email-cont {
+            padding-left: 27px;
+            justify-content: flex-start;
+        }
+    }
+}

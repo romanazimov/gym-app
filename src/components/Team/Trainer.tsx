@@ -1,6 +1,7 @@
 import './Trainer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import SocialMediaButton from '../SocialMediaButton';
 
 interface TrainerProps {
     info: {
@@ -18,15 +19,18 @@ export default function Trainer({info}:TrainerProps) {
             <img className='trainer-img' src={info.img} />
             <p className='trainer-name'>{info.name}</p>
             <div className='social-cont'>
-                <div className='instagram'>
+                {/* <div className='instagram'>
                     <FontAwesomeIcon className='ig-icon' icon={faInstagram} />
                 </div>
                 <div className='twitter'>
                     <FontAwesomeIcon className='twitter-icon' icon={faTwitter} />
-                </div>
-                <div className='youtube'>
+                </div> */}
+                {/* <div className='youtube'>
                     <FontAwesomeIcon className='yt-icon' icon={faYoutube} />
-                </div>
+                </div> */}
+                <SocialMediaButton icon={faInstagram} />
+                <SocialMediaButton icon={faTwitter} />
+                <SocialMediaButton icon={faYoutube} />
             </div>
         </div>
     )
