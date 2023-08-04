@@ -12,7 +12,7 @@ import trainer_8 from '../assets/Team/trainer_8.png'
 
 export default function Team() {
     return(
-        <section id='Team'>
+        <section id='team'>
             <div className='container'>
                 <h1>Meet the Team</h1>
                 <div className='team-cont'>

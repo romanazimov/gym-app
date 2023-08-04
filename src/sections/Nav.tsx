@@ -1,24 +1,38 @@
 import './nav.scss';
-import Logo from '../components/Logo';
+import { useState } from 'react'
+import { Link } from 'react-scroll'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import Logo from '../components/Logo'
 
 export default function Nav() {
+
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick(false)
+
     return (
         <nav>
             <div className='container'>
                 <Logo />
-                <div>
+
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes className='hamburger' />)
+                        : (<FaBars className='hamburger' />)}
+                </div>
+
+                <div className={click ? "nav-menu active" : "nav-menu"}>
                     <ul>
                         <li>
-                            Advantages
+                            <Link to="advantages" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Advantages</Link>
                         </li>
                         <li>
-                            Membership
+                            <Link to="membership" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Membership</Link>
                         </li>
                         <li>
-                            About
+                            <Link to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
                         </li>
                         <li>
-                            Trainers
+                            <Link to="team" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Team</Link>
                         </li>
                     </ul>
                 </div>
