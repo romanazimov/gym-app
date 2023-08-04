@@ -60,8 +60,13 @@ nav {
             display: block;
             cursor: pointer;
             z-index: 999;
-            color: yellow;
+            // color: yellow;
             font-size: 30px;
+            transition: .1s;
+        }
+
+        .hamburger:hover {
+            color: yellow;
         }
 
         // .nav-menu-cont {

@@ -11,7 +11,7 @@ export default function Home() {
             </div>
             <div className='text-cont'>
                 <div className='title-cont'>
-                    <p className='title'>Free trial session with a trainer</p>
+                    <p className='title'>Welcome to GYM24, a gym open 24/7 for your convenience.</p>
                     {/* <button>Learn More</button> */}
                 </div>
             </div>
