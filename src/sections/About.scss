@@ -9,9 +9,6 @@
         justify-content: space-between;
         align-items: flex-start;
         gap: 60px;
-        flex-grow: 1; /* Allow items to grow equally to fill available space */
-        flex-shrink: 1; /* Allow items to shrink equally when container is smaller */
-        flex-basis: 0; /* Distribute the available space equally among items */
     }
 
     h1 {

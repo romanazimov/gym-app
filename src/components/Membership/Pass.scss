@@ -8,17 +8,10 @@
     flex-direction: column;
     background-color: #222222;
     transition: .5s;
-    // background-color: yellow;
-
-    // div:last-of-type {
-    //     margin-top: auto;
-    //     margin-bottom: 20px;
-    // }
 
     .pass-header {
         padding: 20px 0;
         border-bottom: 1px solid black;
-        // margin-bottom: 40px;
         transition: .5s;
     }
 
@@ -48,16 +41,6 @@
             margin-bottom: 10px;
         }
     }
-
-    // .purchase {
-    // }
-
-    // .purchase-btn {
-    //     // display: flex;
-    //     justify-content: center;
-    //     align-items: flex-end;
-    //     color: yellow;
-    // }
 }
 
 #pass-container:hover {

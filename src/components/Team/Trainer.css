@@ -1,0 +1,63 @@
+.trainer-cont {
+    width: 275px;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.trainer-name {
+    font-size: 20px;
+    font-style: bold;
+    font-weight: bold;
+}
+
+
+.trainer-img,
+.trainer-name,
+.social-cont {
+    margin-bottom: 16px;
+    color: white;
+}
+
+.social-cont {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instagram,
+.twitter,
+.youtube {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram:hover,
+.twitter:hover,
+.youtube:hover {
+    border-color: yellow;
+}
+
+.instagram .ig-icon,
+.twitter .twitter-icon,
+.youtube .yt-icon {
+    transition: .4s;
+}
+
+.instagram:hover .ig-icon,
+.twitter:hover .twitter-icon,
+.youtube:hover .yt-icon {
+    color: yellow;
+}

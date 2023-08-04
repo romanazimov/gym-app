@@ -7,6 +7,7 @@ import Nav from './sections/Nav.tsx'
 import Advantages from './sections/Advantages.tsx'
 import Membership from './sections/Membership.tsx'
 import About from './sections/About.tsx'
+import Team from './sections/Team.tsx'
 
 function App() {
   // const [count, setCount] = useState(0)

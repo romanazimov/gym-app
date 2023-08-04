@@ -1,5 +1,5 @@
-import hero from '../assets/hero.png'
 import './Home.scss'
+import hero from '../assets/hero.png'
 
 export default function Home() {
     return (
@@ -12,6 +12,7 @@ export default function Home() {
             <div className='text-cont'>
                 <div className='title-cont'>
                     <p className='title'>Free trial session with a trainer</p>
+                    {/* <button>Learn More</button> */}
                 </div>
             </div>
         </section>
