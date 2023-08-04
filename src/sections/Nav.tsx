@@ -1,12 +1,11 @@
 import './nav.scss';
+import Logo from '../components/Logo';
 
 export default function Nav() {
     return (
         <nav>
             <div className='container'>
-                <p className='logo'>
-                    GYM<span className='sub-logo'>24</span>
-                </p>
+                <Logo />
                 <div>
                     <ul>
                         <li>

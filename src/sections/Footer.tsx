@@ -1,4 +1,5 @@
 import './Footer.scss'
+import Logo from '../components/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import SocialMediaButton from '../components/SocialMediaButton';
@@ -8,9 +9,7 @@ export default function Footer() {
     return (
         <footer>
             <div className='about-col'>
-                <p className='logo'>
-                    GYM<span className='sub-logo'>24</span>
-                </p>
+                <Logo />
                 <p className='about'>
                     Build strength and confidence at our gym with state-of-the-art 
                     equipment, personalized training, and a motivating community.
