@@ -73,12 +73,16 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: white;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  outline: 2px auto -webkit-focus-ring-color;
+} */
+
+/* button:focus {
+  background-color: red;
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -86,7 +90,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: red;
   }
   button {
     background-color: #f9f9f9;

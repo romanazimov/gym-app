@@ -9,7 +9,7 @@ export default function Advantages() {
     return (
         <section id='advantages'>
             <div className='container'>
-                <h1>Reasons to join</h1>
+                <h1>Reasons to Join</h1>
                 <div className='reasons'>
                     <Reason
                         img={line}

@@ -35,26 +35,28 @@
         position: relative;
         overflow: hidden;
         width: 100%;
+        background-color: red;
     }
     
     .img-cont::after {
         content: '';
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         box-shadow: inset 0px 20px 45px 90px rgb(0, 0, 0);
         width: 100%;
         height: 100%;
     }
     
-    .img {
+    .hero-img {
         width: 100%;
         max-width: 800px;
         height: auto;
+        margin: 0;
     }
 
     @media (width < 1000px) {
-        margin-top: 50px;
+        // margin-top: 50px;
 
         .title-cont {
             justify-content: middle;
@@ -62,6 +64,8 @@
     }
 
     @media (width < 750px) {
+        margin-top: 50px;
+
         .title {
             text-align: center;
             padding-left: 0;
