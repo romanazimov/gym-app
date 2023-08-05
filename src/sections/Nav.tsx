@@ -23,16 +23,16 @@ export default function Nav() {
                 <div className={click ? "nav-menu active" : "nav-menu"}>
                     <ul>
                         <li>
-                            <Link to="advantages" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Advantages</Link>
+                            <Link to="advantages" spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>Advantages</Link>
                         </li>
                         <li>
-                            <Link to="membership" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Membership</Link>
+                            <Link to="membership" spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>Membership</Link>
                         </li>
                         <li>
-                            <Link to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
+                            <Link to="about" spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>About</Link>
                         </li>
                         <li>
-                            <Link to="team" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Team</Link>
+                            <Link to="team" spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>Team</Link>
                         </li>
                     </ul>
                 </div>
