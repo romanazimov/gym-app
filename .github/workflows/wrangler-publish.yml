@@ -34,6 +34,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          # projectName: # # e.g. 'my-project'
+          projectName: gym-app # e.g. 'my-project'
           # directory: dist # e.g. 'dist'
-          command: pages deploy dist
+          # command: pages deploy dist
