@@ -1,16 +1,39 @@
-name: Wrangler Publish
+# name: Wrangler Publish
+
+# on: [push]
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     name: Deploy
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Publish
+#         uses: cloudflare/wrangler-action@2.0.0
+#         with:
+#           apiToken: 
+#           accountId: 
+#           command: pages deploy dist
 
 on: [push]
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy to Cloudflare Pages
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      # Run your project's build step
+      # - name: Build
+      #   run: npm install && npm run build
       - name: Publish
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages publish dist
+          projectName: gym-app # e.g. 'my-project'
+          directory: dist # e.g. 'dist'
+          # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
