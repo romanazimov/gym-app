@@ -39,7 +39,12 @@
 #           # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
 #name: Wrangler Publish
-on: [push]
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -47,8 +52,8 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v3
-      - name: Publish app
-        uses: cloudflare/wrangler-action@2.0.0
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Publish
+        uses: Cyb3r-Jak3/wrangler-action
+        env:
+          CLOUDFLARE_ACCOUNT_ID : ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
