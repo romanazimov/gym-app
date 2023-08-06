@@ -38,28 +38,25 @@
 #           # directory: dist # e.g. 'dist'
 #           # command: pages deploy dist
 
-on: [push]
+name: Wrangler Publish
+
+on:
+  push:
+    branches:
+      - main # Replace 'main' with your preferred branch name
 
 jobs:
-  publish:
+  deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    name: Publish to Cloudflare Pages
+    name: Deploy
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      # Run a build step here if your project requires
+      - name: Build
+        run: npm run build
 
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: gym-app
-          directory: index
-          # Optional: Switch what branch you are publishing to.
-          # By default this will be the branch which triggered this workflow
-          branch: main
+      - name: Publish app
+        run: npx wrangler pages deploy dist
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }} 
