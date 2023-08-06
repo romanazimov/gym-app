@@ -1,28 +1,16 @@
 name: Wrangler Publish
 
-on:
-  push:
-    branches:
-      - gym-app
+on: [push]
 
 jobs:
-  build-and-publish:
+  deploy:
     runs-on: ubuntu-latest
-
+    name: Deploy
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Install Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - name: Publish
+        uses: cloudflare/wrangler-action@2.0.0
         with:
-          node-version: 14  # Adjust this to your Node.js version if needed
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build the application
-        run: npm run build
-
-      - name: Publish using Wrangler
-        run: npx wrangler pages publish dist
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages publish --project-name=gym-app
