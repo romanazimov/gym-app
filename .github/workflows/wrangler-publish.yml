@@ -36,3 +36,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # projectName: # # e.g. 'my-project'
           # directory: dist # e.g. 'dist'
+          command: pages deploy dist
