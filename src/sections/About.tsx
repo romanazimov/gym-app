@@ -15,12 +15,12 @@ export default function About() {
             <div className='container'>
                 <div className='description'>
                     <p className='desc-title'>About us</p>
-                    <p>Welcome to Gym24, where fitness meets flexibility! Our spacious 
+                    <p>Welcome to GYM24, where fitness meets flexibility! Our spacious 
                         facility caters to diverse athletic interests, providing ample room for 
                         various sports enthusiasts. With a wide array of state-of-the-art equipment, 
                         you'll find everything you need to crush your fitness goals. Our gym boasts 
                         4 dedicated fitness zones, ensuring a tailored experience for every workout style. </p>
-                    <p>At [Your Gym Name], we're dedicated to your fitness journey. That's why we're open 
+                    <p>At GYM24, we're dedicated to your fitness journey. That's why we're open 
                         24/7, 365 days a year, including holidays. Your health and fitness never take a 
                         break, and neither do we. Join us in shaping a healthier, stronger you!</p>
                 </div>

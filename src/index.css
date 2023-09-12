@@ -114,6 +114,12 @@ button {
   cursor: pointer;
 }
 
+@media (width < 750px) {
+  h1 {
+    margin-bottom: 50px;
+  }
+}
+
 /* button:hover {
   border-color: red;
 }
