@@ -15,18 +15,14 @@ export default function About() {
             <div className='container'>
                 <div className='description'>
                     <p className='desc-title'>About us</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Et 
-                        tortor consequat id porta nibh. Cras semper auctor neque vitae. </p>
-                    <p>Felis donec et odio pellentesque diam volutpat commodo. Morbi leo urna molestie 
-                        at elementum. Maecenas sed enim ut sem viverra. Arcu non odio 
-                        euismod lacinia. Sapien et ligula ullamcorper malesuada proin libero. 
-                        Cursus euismod quis viverra nibh cras pulvinar mattis. Odio euismod 
-                        lacinia at quis risus. </p>
-                    <p>Lectus proin nibh nisl condimentum id venenatis 
-                        a. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper 
-                        dignissim cras. Diam quis enim lobortis scelerisque fermentum dui 
-                        faucibus in. </p>
+                    <p>Welcome to Gym24, where fitness meets flexibility! Our spacious 
+                        facility caters to diverse athletic interests, providing ample room for 
+                        various sports enthusiasts. With a wide array of state-of-the-art equipment, 
+                        you'll find everything you need to crush your fitness goals. Our gym boasts 
+                        4 dedicated fitness zones, ensuring a tailored experience for every workout style. </p>
+                    <p>At [Your Gym Name], we're dedicated to your fitness journey. That's why we're open 
+                        24/7, 365 days a year, including holidays. Your health and fitness never take a 
+                        break, and neither do we. Join us in shaping a healthier, stronger you!</p>
                 </div>
                 <Slideshow images={images}/>
             </div>

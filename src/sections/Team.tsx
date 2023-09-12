@@ -19,73 +19,73 @@ export default function Team() {
                     <Trainer 
                         info={{
                             img: trainer_1,
-                            name: "Victoria Shurpik",
-                            ig_handle: "instagram.com/vshurpik",
-                            twitter_handle: "twitter.com/vshurpik",
-                            yt_handle: "youtube.com/vshurpik"
+                            name: "Emily Smith",
+                            ig_handle: "instagram.com/esmith",
+                            twitter_handle: "twitter.com/esmith",
+                            yt_handle: "youtube.com/esmith"
                     }}
                     />
                     <Trainer 
                         info={{
                             img: trainer_2,
-                            name: "Elizabeth Lavrinenko",
-                            ig_handle: "instagram.com/elavrinenko",
-                            twitter_handle: "twitter.com/elavrinenko",
-                            yt_handle: "youtube.com/elavrinenko"
+                            name: "Sarah Davis",
+                            ig_handle: "instagram.com/sdavis",
+                            twitter_handle: "twitter.com/sdavis",
+                            yt_handle: "youtube.com/sdavis"
                     }}
                     />
                     <Trainer 
                         info={{
                             img: trainer_3,
-                            name: "Ivan Gladkikh",
-                            ig_handle: "instagram.com/igladkikh",
-                            twitter_handle: "twitter.com/igladkikh",
-                            yt_handle: "youtube.com/igladkikh"
+                            name: "Daniel Wilson",
+                            ig_handle: "instagram.com/dwilson",
+                            twitter_handle: "twitter.com/dwilson",
+                            yt_handle: "youtube.com/dwilson"
                     }}
                     />
                     <Trainer 
                         info={{
                             img: trainer_4,
-                            name: "Lyudmila Sabilo",
-                            ig_handle: "instagram.com/lsabilo",
-                            twitter_handle: "twitter.com/lsabilo",
-                            yt_handle: "youtube.com/lsabilo"
+                            name: "Jessica Martinez",
+                            ig_handle: "instagram.com/jmartinez",
+                            twitter_handle: "twitter.com/jmartinez",
+                            yt_handle: "youtube.com/jmartinez"
                     }}
                     />
                     <Trainer 
                         info={{
                             img: trainer_5,
-                            name: "Evgeny Gurkov",
-                            ig_handle: "instagram.com/egurkov",
-                            twitter_handle: "twitter.com/egurkov",
-                            yt_handle: "youtube.com/egurkov"
+                            name: "James Anderson",
+                            ig_handle: "instagram.com/janderson",
+                            twitter_handle: "twitter.com/janderson",
+                            yt_handle: "youtube.com/janderson"
                     }}
                     />
                     <Trainer 
                         info={{
                             img: trainer_6,
-                            name: "Anatoly Prytytsky",
-                            ig_handle: "instagram.com/aprytytsky",
-                            twitter_handle: "twitter.com/aprytytsky",
-                            yt_handle: "youtube.com/aprytytsky"
+                            name: "Michael Brown",
+                            ig_handle: "instagram.com/mbrown",
+                            twitter_handle: "twitter.com/mbrown",
+                            yt_handle: "youtube.com/mbrown"
                     }}
                     />
                     <Trainer 
                         info={{
                             img: trainer_7,
-                            name: "Victor Ludkovich",
-                            ig_handle: "instagram.com/vludkovich",
-                            twitter_handle: "twitter.com/vludkovich",
-                            yt_handle: "youtube.com/vludkovich"
+                            name: "David Taylor",
+                            ig_handle: "instagram.com/dtaylor",
+                            twitter_handle: "twitter.com/dtaylor",
+                            yt_handle: "youtube.com/dtaylor"
                     }}
                     />
                     <Trainer 
                         info={{
                             img: trainer_8,
-                            name: "Maria Masyak",
-                            ig_handle: "instagram.com/mmasyak",
-                            twitter_handle: "twitter.com/mmasyak",
-                            yt_handle: "youtube.com/mmasyak"
+                            name: "Olivia Johnson",
+                            ig_handle: "instagram.com/ojohnson",
+                            twitter_handle: "twitter.com/ojohnson",
+                            yt_handle: "youtube.com/ojohnson"
                     }}
                     />
                 </div>
