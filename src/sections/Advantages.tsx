@@ -1,5 +1,5 @@
 import './Advantages.scss'
-import ReasonComp from './Reason'
+import Reason from '../components/Advantage/Reason'
 import line from '../assets/advantages/icon_line.png'
 import equipment from '../assets/advantages/icon_equipment.png'
 import zones from '../assets/advantages/icon_fitness_zones.png'
@@ -11,28 +11,28 @@ export default function Advantages() {
             <div className='container'>
                 <h1>Reasons to Join</h1>
                 <div className='reasons'>
-                    <ReasonComp
+                    <Reason
                         img={line}
                         info={{ 
                             title: '45000 SQ.FT.', 
                             description: 'A spacious gym for various sports - a safe distance between all exercise machines'
                         }}
                     />
-                    <ReasonComp
+                    <Reason
                         img={equipment}
                         info={{ 
                             title: 'TONS OF GYM EQUIPMENT', 
                             description: 'Premium gym equipment from LifeStyle, Hammer Strength, and TechnoGym'
                         }}
                     />
-                    <ReasonComp
+                    <Reason
                         img={zones}
                         info={{ 
                             title: '4 FITNESS ZONES', 
                             description: 'From cardio to functional strength training along with a seperate area for boxing and mma'
                         }}
                     />
-                    <ReasonComp
+                    <Reason
                         img={time}
                         info={{ 
                             title: '24/7 GYM OPERATION', 
