@@ -42,10 +42,11 @@
         align-items: center;
         max-width: 600px;
         width: 100%;
-        text-align: right;
+        text-align: left;
         z-index: 100;
         height: 660px;
         margin-left: 40px;
+        font-weight: bold;
     }
     
     .title {
@@ -69,21 +70,6 @@
         width: 100%;
         height: 100%;
     }
-    
-    // .hero-img {
-    //     width: 100%;
-    //     max-width: 800px;
-    //     height: auto;
-    //     margin: 0;
-    // }
-
-    @media (width < 1000px) {
-        // margin-top: 50px;
-
-        .title-cont { 
-            margin: 0;
-        }
-    }
 
     @media (width < 750px) {
         margin-top: 20px;
@@ -91,6 +77,12 @@
         .text-cont {
             justify-content: center;
             margin-top: 100px;
+        }
+
+        .title-cont { 
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0 20px;
         }
 
         .title {
