@@ -1,5 +1,5 @@
 import './Advantages.scss'
-import ReasonComp from '../components/Advantages/Reason'
+import ReasonComp from './Reason'
 import line from '../assets/advantages/icon_line.png'
 import equipment from '../assets/advantages/icon_equipment.png'
 import zones from '../assets/advantages/icon_fitness_zones.png'
