@@ -1,8 +1,8 @@
 import './Nav.scss';
-import { useState } from 'react'
-import { Link } from 'react-scroll'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import Logo from '../components/Logo'
+import { useState } from 'react';
+import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Logo from '../components/Logo';
 
 export default function Nav() {
 
