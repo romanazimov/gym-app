@@ -10,7 +10,7 @@ import Footer from './sections/Footer.tsx'
 function App() {
   return (
     <>
-      <Nav/>
+      {/* <Nav/> */}
       <Home/>
       <Advantages/>
       <Membership/>
