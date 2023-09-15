@@ -1,9 +1,9 @@
 import './Advantages.scss'
-import Reason from '../components/Advantages/Reason'
-import line from '../assets/advantages/icon_line.png'
-import equipment from '../assets/advantages/icon_equipment.png'
-import zones from '../assets/advantages/icon_fitness_zones.png'
-import time from '../assets/advantages/icon_time.png'
+// import Reason from '../components/Advantages/Reason'
+// import line from '../assets/advantages/icon_line.png'
+// import equipment from '../assets/advantages/icon_equipment.png'
+// import zones from '../assets/advantages/icon_fitness_zones.png'
+// import time from '../assets/advantages/icon_time.png'
 
 export default function Advantages() {
     return (
@@ -11,7 +11,7 @@ export default function Advantages() {
             <div className='container'>
                 <h1>Reasons to Join</h1>
                 <div className='reasons'>
-                    <Reason
+                    {/* <Reason
                         img={line}
                         info={{ title: '45000 SQ.FT.', description: 'A spacious gym for various sports - a safe distance between all exercise machines'}}
                     />
@@ -26,7 +26,7 @@ export default function Advantages() {
                     <Reason
                         img={time}
                         info={{ title: '24/7 GYM OPERATION', description: 'We are open 24 hours a day including all holidays'}}
-                    />
+                    /> */}
                 </div>
             </div>
         </section>
