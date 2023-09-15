@@ -13,19 +13,31 @@ export default function Advantages() {
                 <div className='reasons'>
                     <ReasonComp
                         img={line}
-                        info={{ title: '45000 SQ.FT.', description: 'A spacious gym for various sports - a safe distance between all exercise machines'}}
+                        info={{ 
+                            title: '45000 SQ.FT.', 
+                            description: 'A spacious gym for various sports - a safe distance between all exercise machines'
+                        }}
                     />
                     <ReasonComp
                         img={equipment}
-                        info={{ title: 'TONS OF GYM EQUIPMENT', description: 'Premium gym equipment from LifeStyle, Hammer Strength, and TechnoGym'}}
+                        info={{ 
+                            title: 'TONS OF GYM EQUIPMENT', 
+                            description: 'Premium gym equipment from LifeStyle, Hammer Strength, and TechnoGym'
+                        }}
                     />
                     <ReasonComp
                         img={zones}
-                        info={{ title: '4 FITNESS ZONES', description: 'From cardio to functional strength training along with a seperate area for boxing and mma'}}
+                        info={{ 
+                            title: '4 FITNESS ZONES', 
+                            description: 'From cardio to functional strength training along with a seperate area for boxing and mma'
+                        }}
                     />
                     <ReasonComp
                         img={time}
-                        info={{ title: '24/7 GYM OPERATION', description: 'We are open 24 hours a day including all holidays'}}
+                        info={{ 
+                            title: '24/7 GYM OPERATION', 
+                            description: 'We are open 24 hours a day including all holidays'
+                        }}
                     />
                 </div>
             </div>
